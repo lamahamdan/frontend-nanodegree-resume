@@ -205,7 +205,4 @@ education.display = function() {
 projects.display();
 education.display();
 
-
-
-
-$('#education').append(HTMLschoolStart);
+$('#mapDiv').append(googleMap);
