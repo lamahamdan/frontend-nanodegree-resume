@@ -117,7 +117,7 @@ work.display = function() {
             $(".work-entry:last").append(HTMLworkDescription.replace("%data%", work.jobs[job].description));
         }
     }
-}
+};
 
 projects.display = function() {
     for (var project in projects.projects) {
