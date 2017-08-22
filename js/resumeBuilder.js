@@ -7,8 +7,8 @@ var bio = {
         github: "lamahamdan",
         twitter: "lamahamdan",
         location: "Riyadh",
-        welcomeMessage: "Interested in web development, Teaching and graphic design"
     },
+    welcomeMessage: "Interested in web development, Teaching and graphic design",
     skills: ["Java", "HTML,CSS,JavaScript", "PHP", "SQL,MySql", "C#,ASP.Net"],
     biopic: "images/lh.png"
 };
@@ -106,7 +106,7 @@ bio.display = function() {
 
 };
 
-function displayWork() {
+work.display = function() {
     for (var job in work.jobs) {
         if (true) {
             //  $("#workExperience").append(HTMLworkEmployer.replace("%data%",work.jobs[jobs].employer));
@@ -166,7 +166,7 @@ education.display = function() {
 
 // Calling the functions
 bio.display();
-displayWork();
+work.display();
 projects.display();
 education.display();
 
