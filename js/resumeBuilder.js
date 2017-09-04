@@ -107,7 +107,6 @@ bio.display = function() {
 work.display = function() {
     if (work.jobs.length > 0) {
         for (var job = 0; job < work.jobs.length; job++) {
-            //  $("#workExperience").append(HTMLworkEmployer.replace("%data%",work.jobs[jobs].employer));
             $("#workExperience").append(HTMLworkStart);
             $(".work-entry:last").append(HTMLworkEmployer.replace("%data%", work.jobs[job].employer) + HTMLworkTitle.replace("%data%", work.jobs[job].title));
             $(".work-entry:last").append(HTMLworkDates.replace("%data%", work.jobs[job].dates));
@@ -120,7 +119,6 @@ work.display = function() {
 projects.display = function() {
     if (projects.projects.length > 0) {
         for (var project = 0; project < projects.projects.length; project++) {
-            //  $("#workExperience").append(HTMLworkEmployer.replace("%data%",work.jobs[jobs].employer));
             $("#projects").append(HTMLprojectStart);
             $(".project-entry:last").append(HTMLprojectTitle.replace("%data%", projects.projects[project].title));
             $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[project].dates));
@@ -134,7 +132,6 @@ projects.display = function() {
 education.display = function() {
     if (education.schools.length > 0) {
         for (var school = 0; school < education.schools.length; school++) {
-            //  $("#workExperience").append(HTMLworkEmployer.replace("%data%",work.jobs[jobs].employer));
             $("#education").append(HTMLschoolStart);
             $(".education-entry:last").append(HTMLschoolName.replace("%data%", education.schools[school].name).replace("#", education.schools[school].url) + HTMLschoolDegree.replace("%data%", education.schools[school].degree));
             $(".education-entry:last").append(HTMLschoolDates.replace("%data%", education.schools[school].dates));
